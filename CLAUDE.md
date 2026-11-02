@@ -19,14 +19,14 @@ HMG-API (1.0.0, in development) is a mod manager for Hyundai/Kia/Genesis **Gen5W
 
 Owners get to decide for their own units. Follow these by default. If the user asks to go against one, say the risk in a line or two, then do what they asked. HMG-API does the same for its users: a warning plus an override, never a silent block.
 
-- Only each car's newest firmware for its region is supported (US 260507, Canada 260206; each region has its own builds, so `patches/cars` and `compat.json` match the full region, e.g. `CVEV.USA.`). Don't port older firmware by default; ask the owner to update the head unit. On a known car with other firmware the installer falls back to basic mode and says to update (`MODE_UPDATE`).
+- Only each car's newest firmware for its region is supported (US 260507, Canada 260206, Korean Ioniq 5 260902; each region has its own builds, so patch sets match the full region, e.g. `CVEV.USA.`). Don't port older firmware by default; ask the owner to update the head unit. On a known car with other firmware the installer falls back to basic mode and says to update (`MODE_UPDATE`).
 - Don't flash MICOM, the bootloader or modem firmware, or firmware meant for another car: these can brick the unit or the car beyond what a USB stick can fix.
 - Don't send our own CAN frames. Send vehicle commands through the stock services (BCMManager etc.), and review each new one on its own first.
 
 ## Facts
 
 - Gen5W is only in navigation trims; non-navigation trims have a "Display Audio" head unit (e.g. Display Audio Gen2V on the Tucson), unsupported and absent from the update catalogue.
-- Korea: no Korean car confirmed working (every unit checked had no Wi-Fi hardware), so Korean cars are on no list; reports are still welcome.
+- Korea: owners report Leafia 1.0.2 wireless CarPlay and Android Auto working on Ioniq 5 NEEV.KOR 260902 units with a Wi-Fi chip. The HMG-API port is not yet tested on a car and has no Korean hook map; its hook features stay off until one is mapped and verified. Some Korean units have no Wi-Fi chip (Engineering Mode: Wi-Fi module NONE or MAC 00:00:00:00:00:00). Stock firmware may leave an existing chip unpowered until the hotspot feature is restored, so empty SDIO before install is inconclusive.
 
 ## Layout
 
@@ -72,4 +72,3 @@ Owners get to decide for their own units. Follow these by default. If the user a
 ## Testing without a car
 
 `tools/test-all.sh`: hmgapid (real daemon/client under qemu-arm), zygote wrapper, lpatch, and the dev install scripts (needs an ARM busybox and a stock `app_process`). Stock trees and full builds stay out of the repo (`~/hmg-private`).
-

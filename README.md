@@ -31,6 +31,7 @@ needed to add your car ([Supported cars](https://github.com/VysseCodes/HMG-API/w
 | Kia EV6 | USA | 260507 | checked on a car |
 | Kia EV6, Hyundai Ioniq 5 | Canada | 260206 | waiting for a Car Report |
 | Hyundai Ioniq 5 | USA | 260507 | waiting for a Car Report |
+| Hyundai Ioniq 5 | Korea | NEEV.KOR 260902 | ported from Leafia 1.0.2; not yet tested on a car with HMG-API; hook map needed |
 
 ## Help and requests
 
