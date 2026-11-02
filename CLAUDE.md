@@ -26,7 +26,7 @@ Owners get to decide for their own units. Follow these by default. If the user a
 ## Facts
 
 - Gen5W is only in navigation trims; non-navigation trims have a "Display Audio" head unit (e.g. Display Audio Gen2V on the Tucson), unsupported and absent from the update catalogue.
-- Korea: owners report Leafia 1.0.2 wireless CarPlay and Android Auto working on Ioniq 5 NEEV.KOR 260902 units with a Wi-Fi chip. The HMG-API port is not yet tested on a car and has no Korean hook map; its hook features stay off until one is mapped and verified. Some Korean units have no Wi-Fi chip (Engineering Mode: Wi-Fi module NONE or MAC 00:00:00:00:00:00). Stock firmware may leave an existing chip unpowered until the hotspot feature is restored, so empty SDIO before install is inconclusive.
+- Korea: owners report Leafia 1.0.2 wireless CarPlay and Android Auto working on Ioniq 5 NEEV.KOR 260902 units with a Wi-Fi chip. An owner's HMG-API Car Report supplied a 324/325 point map, now included as `mapped` but not yet verified on a car; hooks stay off until `engine verify-map` passes. The HMG-API wireless mod has not been confirmed working on a car. Some Korean units have no Wi-Fi chip (Engineering Mode: Wi-Fi module NONE or MAC 00:00:00:00:00:00). Stock firmware may leave an existing chip unpowered until the hotspot feature is restored, so empty SDIO before install is inconclusive.
 
 ## Layout
 

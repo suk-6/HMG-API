@@ -7,8 +7,10 @@ there are no rebuilt app files in this set and no app `expect` hashes. The share
 CarPlay audio recipe fits the Leafia stock audio library; Core and Utils have
 native hashes for the built-in Korean Wi-Fi session and AAC/Opus converters.
 
-These hooks require a verified NEEV.KOR hook map. The stock app files needed to
-generate and verify that map are not in this repo or available on this machine.
-Until an on-car map is built and verified, HMG-API applies the projection flags
-and hotspot file but leaves the Java and native hook features off. A Car Report
-from a Wi-Fi-equipped unit is required to finish and validate this port.
+An owner's on-car mapper report supplied `maps/hyundai/ioniq5/kor/260902`:
+324/325 hook points, status `mapped`, not verified. The one missing point is a
+ThemeSettings split-screen item method, unused by this mod. Until `engine
+verify-map` passes on the car, HMG-API applies the projection flags and hotspot
+file but leaves Java and native hook features off. The mod has not yet been
+confirmed working with HMG-API on a car. The report's Mods section was empty,
+so it does not establish that the owner-installed mod applied successfully.
