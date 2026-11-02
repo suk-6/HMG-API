@@ -4,6 +4,7 @@
     "CVEV.CAN.": "ev6_ca",
     "NEEV.USA.": "neev",
     "NEEV.CAN.": "neev_ca",
+    "NEEV.KOR.": "neev_kr",
     "NEEV23.USA.": "neev"
   },
   "stock": "patches/{set}/stock",
@@ -23,6 +24,15 @@
       "key": "persist.ium.support",
       "value": "carplay",
       "part": "projection"
+    },
+    {
+      "type": "add",
+      "path": "/system/etc/permissions/com.hkmc.software.wifihotspot.xml",
+      "src": "files/com.hkmc.software.wifihotspot.xml",
+      "stock": "absent",
+      "optional": true,
+      "mode": "644",
+      "part": "kor-hotspot"
     },
     {
       "type": "prop",

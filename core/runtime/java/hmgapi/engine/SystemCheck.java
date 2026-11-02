@@ -61,6 +61,12 @@ public final class SystemCheck {
     /** a Wi-Fi chip answered on SDIO on this unit once (hmgapi.wifi) */
     static final String WIFI_SEEN = "/data/hmgapi/public/wifi-chip";
 
+    /** This firmware can leave an existing chip unpowered until hotspot is restored. */
+    public static boolean koreanIoniq5WifiUnconfirmed(Facts facts) {
+        return "NEEV".equals(facts.get("model")) && "KOR".equals(facts.get("region"))
+                && "260902".equals(facts.get("firmware")) && !facts.features().contains("hmgapi.wifi");
+    }
+
     /** What the head unit is. */
     public static final class Facts {
         final Map<String, String> f = new LinkedHashMap<String, String>();

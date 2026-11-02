@@ -31,11 +31,24 @@
       "features": [
         "hmgapi.wifi"
       ]
+    },
+    {
+      "model": "NEEV",
+      "region": "KOR",
+      "firmware": "260902"
     }
   ],
   "parts": [
     {
       "id": "projection"
+    },
+    {
+      "id": "kor-hotspot",
+      "system": {
+        "model": "NEEV",
+        "region": "KOR",
+        "firmware": "260902"
+      }
     },
     {
       "id": "tbt",

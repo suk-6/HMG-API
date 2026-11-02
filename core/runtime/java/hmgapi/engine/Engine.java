@@ -409,6 +409,11 @@ public final class Engine {
                 }
                 out.add("WARNING: " + m.id + ": " + sys + "; overrides.ignore_system is set, going on at your own risk");
             }
+            if ("wireless-carplay-aa".equals(m.id) && SystemCheck.koreanIoniq5WifiUnconfirmed(facts)) {
+                out.add("WARNING: Korean Ioniq 5 Wi-Fi hardware is unconfirmed: stock firmware may leave SDIO empty until the hotspot feature is restored. "
+                        + "Some units have no Wi-Fi chip; check Engineering Mode for Wi-Fi module NONE or MAC 00:00:00:00:00:00. "
+                        + "Wireless projection will only work with a chip.");
+            }
             settings(m);
             Object parts = m.json.get("parts");
             if (parts instanceof List) {

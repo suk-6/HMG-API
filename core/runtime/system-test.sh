@@ -58,4 +58,12 @@ eng plan; has "override goes on with a warning" "WARNING: b: needs region KOR" "
 rm -r $R/data/hmgapi/mods/b
 mod c '"all"' '[{"id": "base"}, {"id": "wifi", "system": {"features": ["hmgapi.wifi"]}}]'
 eng plan; has "a part the unit can't run is left out" "c: part wifi left out: needs hmgapi.wifi" "$out"
+
+# On Korean NEEV 260902 the stock hotspot removal can leave even a present chip
+# unpowered. Only this mod/firmware accepts unknown hardware; other cars keep the
+# SDIO requirement, and the engine warns before its file changes.
+printf 'ro.build.product=NEEV.KOR.0000.V039.001.260902\nro.board.platform=tcc803x\nro.mobis.onebindir=neev_kr\n' > $R/props.txt
+sc mods/wireless-carplay-aa; has "Korean Ioniq 5 accepted with no SDIO device" "supports this unit" "$out"
+printf 'ro.build.product=NEEV.KOR.0000.V039.001.260901\nro.board.platform=tcc803x\nro.mobis.onebindir=neev_kr\n' > $R/props.txt
+sc mods/wireless-carplay-aa; has "other Korean firmware refused" "matches none" "$out"
 exit $fail
