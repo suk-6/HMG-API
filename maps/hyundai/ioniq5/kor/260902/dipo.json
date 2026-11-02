@@ -1,0 +1,163 @@
+{
+  "dipo.bt": {
+    "class": "com.daudio.app.dipo.f.c"
+  },
+  "dipo.bt.set_carplay_bt_address": {
+    "method": "o",
+    "params": [
+      "java.lang.String"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "dipo.btcm": {
+    "class": "com.broadcom.bt.hfdevice.hfbtcm.HfDeviceBTCMManager"
+  },
+  "dipo.btcm.register_listener": {
+    "method": "registerHfDeviceStatusListener",
+    "params": [
+      "com.broadcom.bt.hfdevice.hfbtcm.HfDeviceStatusListener"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "dipo.carplay": {
+    "class": "com.daudio.app.dipo.telechips.CarPlayService"
+  },
+  "dipo.carplay.iap_message": {
+    "method": "oniAPSendMessage",
+    "params": [
+      "byte[]",
+      "int"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "dipo.carplay.native_iap_send": {
+    "method": "TccCarPlayNativeMethod_iAPSendMessage",
+    "params": [
+      "byte[]",
+      "int"
+    ],
+    "ret": "int",
+    "static": false
+  },
+  "dipo.carplay.session_created": {
+    "method": "onSessionCreated",
+    "params": [],
+    "ret": "void",
+    "static": false
+  },
+  "dipo.carplay.session_finalized": {
+    "method": "onSessionFinalized",
+    "params": [
+      "int"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "dipo.carplay.session_started": {
+    "method": "onSessionStarted",
+    "params": [
+      "int"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "dipo.iap2": {
+    "class": "com.daudio.app.dipo.e.b"
+  },
+  "dipo.iap2.bt_address": {
+    "method": "K",
+    "params": [],
+    "ret": "java.lang.String",
+    "static": false
+  },
+  "dipo.iap2.set_notify_on": {
+    "method": "a",
+    "params": [
+      "com.daudio.app.dipo.e.b",
+      "boolean"
+    ],
+    "ret": "boolean",
+    "static": true
+  },
+  "dipo.iap2_client": {
+    "class": "com.daudio.app.dipo.e.a"
+  },
+  "dipo.iap2_client.manager": {
+    "field": "Q",
+    "type": "com.daudio.app.dipo.e.b",
+    "static": false
+  },
+  "dipo.iap2_listener": {
+    "class": "com.daudio.app.dipo.e.g"
+  },
+  "dipo.iap2_listener.connected": {
+    "method": "connected",
+    "params": [
+      "int",
+      "java.lang.String"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "dipo.iap2_listener.disconnected": {
+    "method": "disconnected",
+    "params": [
+      "int"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "dipo.iap2_listener.notify": {
+    "method": "notify",
+    "params": [
+      "int",
+      "int",
+      "int",
+      "com.tcc.iap2.Iap2NotiMsg"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "dipo.iap2_listener.owner": {
+    "field": "mM",
+    "type": "com.daudio.app.dipo.e.a",
+    "static": false
+  },
+  "dipo.iap2_proxy": {
+    "class": "com.tcc.iap2.IIap2Service$Stub$Proxy"
+  },
+  "dipo.iap2_proxy.stop_route_guidance": {
+    "method": "Iap2SvcStopRouteGuidanceUpdate",
+    "params": [
+      "java.lang.String[]"
+    ],
+    "ret": "boolean",
+    "static": false
+  },
+  "dipo.session_listener": {
+    "class": "com.daudio.app.dipo.service.q"
+  },
+  "dipo.session_listener.session_details": {
+    "method": "a",
+    "params": [
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String",
+      "java.lang.String"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "dipo.utils": {
+    "class": "com.daudio.app.dipo.i.e"
+  },
+  "dipo.utils.is_support_wireless_carplay": {
+    "method": "isSupportWirelessCarPlay",
+    "params": [],
+    "ret": "boolean",
+    "static": false
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "gpm.cluster_type": {
+    "class": "com.google.android.projection.proto.Protos$NavigationStatusService$InstrumentClusterType"
+  },
+  "gpm.cluster_type.enum": {
+    "field": "ENUM",
+    "type": "com.google.android.projection.proto.Protos$NavigationStatusService$InstrumentClusterType",
+    "static": true
+  },
+  "gpm.cluster_type.image": {
+    "field": "IMAGE",
+    "type": "com.google.android.projection.proto.Protos$NavigationStatusService$InstrumentClusterType",
+    "static": true
+  },
+  "gpm.navigation_status": {
+    "class": "com.google.android.projection.protocol.NavigationStatus"
+  },
+  "gpm.navigation_status.init": {
+    "method": "init",
+    "params": [
+      "int",
+      "long",
+      "int",
+      "com.google.android.projection.proto.Protos$NavigationStatusService$InstrumentClusterType",
+      "int",
+      "int",
+      "int"
+    ],
+    "ret": "boolean",
+    "static": false
+  },
+  "gpm.navigation_status.next_turn": {
+    "method": "navigationNextTurnCallback",
+    "params": [
+      "java.lang.String",
+      "int",
+      "int",
+      "byte[]",
+      "int",
+      "int"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "gpm.navigation_status.next_turn_distance": {
+    "method": "navigationNextTurnDistanceCallback",
+    "params": [
+      "int",
+      "int",
+      "int",
+      "int"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "gpm.navigation_status.receiver": {
+    "field": "mGalReceiver",
+    "type": "com.google.android.projection.protocol.GalReceiver",
+    "static": false
+  },
+  "gpm.navigation_status.status": {
+    "method": "navigationStatusCallback",
+    "params": [
+      "int"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "gpm.receiver": {
+    "class": "com.google.android.projection.protocol.GalReceiver"
+  },
+  "gpm.receiver.destroy": {
+    "method": "destroy",
+    "params": [],
+    "ret": "void",
+    "static": false
+  },
+  "gpm.receiver.focus_native": {
+    "field": "NAVIGATION_FOCUS_STATE_NATIVE",
+    "type": "int",
+    "static": true
+  },
+  "gpm.receiver.send_navigation_focus": {
+    "method": "sendNavigationFocusState",
+    "params": [
+      "int"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "gpm.receiver_service": {
+    "class": "com.google.android.projection.service.GalReceiverService"
+  },
+  "gpm.receiver_service.disconnected": {
+    "method": "onDisconnected",
+    "params": [
+      "int",
+      "boolean",
+      "int"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "gpm.sensor_source": {
+    "class": "com.google.android.projection.protocol.SensorSource"
+  },
+  "gpm.sensor_source.init": {
+    "method": "init",
+    "params": [
+      "int",
+      "long",
+      "int[]",
+      "int",
+      "int[]",
+      "int[]"
+    ],
+    "ret": "boolean",
+    "static": false
+  },
+  "gpm.sensor_source.speed": {
+    "field": "SENSOR_TYPE_SPEED",
+    "type": "int",
+    "static": true
+  },
+  "gpm.video_sink": {
+    "class": "com.google.android.projection.protocol.VideoSink"
+  },
+  "gpm.video_sink.nearest": {
+    "method": "nearestVideoConfiguration",
+    "params": [
+      "int",
+      "int",
+      "int",
+      "int",
+      "int",
+      "int"
+    ],
+    "ret": "void",
+    "static": false
+  }
+}

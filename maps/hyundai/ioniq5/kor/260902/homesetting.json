@@ -1,0 +1,42 @@
+{
+  "homesetting.edit_entry": {
+    "class": "com.hkmc.system.app.homesetting.allmenuedit.c"
+  },
+  "homesetting.edit_entry.get_class_name": {
+    "method": "getClassName",
+    "params": [],
+    "ret": "java.lang.String",
+    "static": false
+  },
+  "homesetting.edit_entry.new": {
+    "ctor": [
+      "com.hkmc.system.app.homesetting.allmenuedit.z",
+      "android.content.Context",
+      "java.lang.String",
+      "java.lang.String",
+      "int",
+      "int",
+      "int"
+    ]
+  },
+  "homesetting.edit_list": {
+    "class": "com.hkmc.system.app.homesetting.allmenuedit.z"
+  },
+  "homesetting.edit_list.get_context": {
+    "method": "getContext",
+    "params": [],
+    "ret": "android.content.Context",
+    "static": false
+  },
+  "homesetting.edit_list.items": {
+    "field": "cs",
+    "type": "java.util.List",
+    "static": true
+  },
+  "homesetting.edit_list.load": {
+    "method": "load",
+    "params": [],
+    "ret": "boolean",
+    "static": false
+  }
+}

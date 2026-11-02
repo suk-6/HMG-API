@@ -1,0 +1,36 @@
+{
+  "btsettings.projection_helper": {
+    "class": "com.android.settings2.bluetooth.iP"
+  },
+  "btsettings.projection_helper.device_connections_available": {
+    "method": "ih",
+    "params": [],
+    "ret": "boolean",
+    "static": true
+  },
+  "btsettings.projection_helper.open_device_connections": {
+    "method": "a",
+    "params": [
+      "android.content.Context",
+      "int"
+    ],
+    "ret": "void",
+    "static": true
+  },
+  "btsettings.projection_helper.open_other_page": {
+    "method": "aj",
+    "params": [
+      "android.content.Context"
+    ],
+    "ret": "void",
+    "static": true
+  },
+  "btsettings.projection_helper.open_wireless_page": {
+    "method": "aQ",
+    "params": [
+      "android.content.Context"
+    ],
+    "ret": "void",
+    "static": true
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "themesettings.split_item": {
+    "class": "com.android.themesettings.splitscreensettings.SplitScreenItem"
+  },
+  "themesettings.split_item.new": {
+    "ctor": [
+      "int",
+      "java.lang.String",
+      "boolean"
+    ]
+  },
+  "themesettings.split_items": {
+    "class": "com.android.themesettings.splitscreensettings.e"
+  },
+  "themesettings.split_items.available": {
+    "method": "a",
+    "params": [
+      "int",
+      "android.content.Context"
+    ],
+    "ret": "boolean",
+    "static": true
+  },
+  "themesettings.split_items.make": {
+    "method": "a",
+    "params": [
+      "android.content.Context",
+      "java.util.LinkedHashMap"
+    ],
+    "ret": "java.util.ArrayList",
+    "static": true
+  },
+  "themesettings.split_items.string_id": {
+    "method": "s",
+    "params": [
+      "int"
+    ],
+    "ret": "int",
+    "static": true
+  },
+  "themesettings.split_items.view_name": {
+    "method": "d",
+    "params": [
+      "android.content.Context",
+      "int"
+    ],
+    "ret": "java.lang.String",
+    "static": true
+  }
+}

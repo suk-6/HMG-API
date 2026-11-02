@@ -1,0 +1,78 @@
+{
+  "iap2.init_info": {
+    "class": "com.tcc.iap2server.Iap2InitInformationMsg"
+  },
+  "iap2.init_info.check_supports_features": {
+    "method": "checkSupportsFeatures",
+    "params": [],
+    "ret": "void",
+    "static": false
+  },
+  "iap2.init_info.route_guidance": {
+    "field": "iAP2UsedRouteGuidance",
+    "type": "int",
+    "static": true
+  },
+  "iap2.service": {
+    "class": "com.tcc.iap2server.Iap2Service"
+  },
+  "iap2.service.get_component": {
+    "method": "getComponent",
+    "params": [],
+    "ret": "int",
+    "static": true
+  },
+  "iap2.service.is_connected": {
+    "method": "isConnected",
+    "params": [],
+    "ret": "boolean",
+    "static": true
+  },
+  "iap2.service.on_create": {
+    "method": "onCreate",
+    "params": [],
+    "ret": "void",
+    "static": false
+  },
+  "iap2.service.receive_connect": {
+    "method": "receiveConnect",
+    "params": [
+      "int"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "iap2.service.receive_disconnect": {
+    "method": "receiveDisconnect",
+    "params": [
+      "int"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "iap2.service.set_device_serial": {
+    "method": "setDeviceSerial",
+    "params": [
+      "java.lang.String"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "iap2.service_receiver": {
+    "class": "com.tcc.iap2server.Iap2Service$1"
+  },
+  "iap2.service_receiver.on_receive": {
+    "method": "onReceive",
+    "params": [
+      "android.content.Context",
+      "android.content.Intent"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "iap2.service_receiver.service": {
+    "field": "this$0",
+    "type": "com.tcc.iap2server.Iap2Service",
+    "static": false
+  }
+}

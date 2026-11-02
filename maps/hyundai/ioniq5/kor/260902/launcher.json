@@ -1,0 +1,41 @@
+{
+  "launcher.menu_entry": {
+    "class": "com.android.launcher3.view.a.Q"
+  },
+  "launcher.menu_entry.new": {
+    "ctor": [
+      "com.android.launcher3.view.a.g",
+      "android.content.Context",
+      "java.lang.String",
+      "java.lang.String",
+      "int",
+      "int",
+      "int"
+    ]
+  },
+  "launcher.menu_list": {
+    "class": "com.android.launcher3.view.a.g"
+  },
+  "launcher.menu_list.get_context": {
+    "method": "getContext",
+    "params": [],
+    "ret": "android.content.Context",
+    "static": false
+  },
+  "launcher.menu_list.items": {
+    "field": "by",
+    "type": "java.util.List",
+    "static": false
+  },
+  "launcher.menu_list.load": {
+    "method": "load",
+    "params": [],
+    "ret": "boolean",
+    "static": false
+  },
+  "launcher.menu_list.lock": {
+    "field": "mLock",
+    "type": "java.lang.Object",
+    "static": false
+  }
+}

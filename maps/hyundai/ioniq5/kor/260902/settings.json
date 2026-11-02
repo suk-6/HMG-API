@@ -1,0 +1,14 @@
+{
+  "settings.split_screen": {
+    "class": "com.android.settings.util.SplitScreenUtils"
+  },
+  "settings.split_screen.supported": {
+    "method": "isSupportViewId",
+    "params": [
+      "android.content.Context",
+      "int"
+    ],
+    "ret": "boolean",
+    "static": true
+  }
+}

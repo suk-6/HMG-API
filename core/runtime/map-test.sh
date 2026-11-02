@@ -26,6 +26,11 @@ printf '{"framework.x": {"class": "android.X"}}\n' > $M/framework.json
 printf 'test.a\ntest.a.go\nframework.x\n' > $R/data/hmgapi/maps/points.txt
 
 eng map; has "no map for another car" "no hook map for this car" "$out"
+mkdir -p $R/data/hmgapi/mods/hooker
+printf '{"id": "hooker", "version": "1.0.0", "hooks": {"jar": "h.jar", "entry": "h.H", "points": {"test.a.go": "observe"}}}\n' > $R/data/hmgapi/mods/hooker/mod.json
+eng plan; check "no map: plan does not fail with a hook mod" 0 $rc
+has "no map: hook mod stays off with a reason" "hooks    hooker won't load: hook point test.a.go isn't mapped on this car" "$out"
+rm -r $R/data/hmgapi/mods/hooker
 car verified
 eng map; has "map found by product prefix and firmware" "hook map: verified for Test (usa 260507), hooks on" "$out"
 printf 'ro.build.product=TEST.USA.0000.V015.012.260206\n' > $R/props.txt

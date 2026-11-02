@@ -1,0 +1,1169 @@
+{
+  "framework.activity_thread": {
+    "class": "android.app.ActivityThread"
+  },
+  "framework.activity_thread.handle_bind_application": {
+    "method": "handleBindApplication",
+    "params": [
+      "android.app.ActivityThread$AppBindData"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "framework.activity_thread.initial_application": {
+    "field": "mInitialApplication",
+    "type": "android.app.Application",
+    "static": false
+  },
+  "framework.app_bind_data": {
+    "class": "android.app.ActivityThread$AppBindData"
+  },
+  "framework.app_bind_data.app_info": {
+    "field": "appInfo",
+    "type": "android.content.pm.ApplicationInfo",
+    "static": false
+  },
+  "framework.app_bind_data.process_name": {
+    "field": "processName",
+    "type": "java.lang.String",
+    "static": false
+  },
+  "framework.bcm_listener": {
+    "class": "com.hkmc.bcm.IBCMListener"
+  },
+  "framework.bcm_listener_stub": {
+    "class": "com.hkmc.bcm.IBCMListener$Stub"
+  },
+  "framework.bcm_listener_stub.as_interface": {
+    "method": "asInterface",
+    "params": [
+      "android.os.IBinder"
+    ],
+    "ret": "com.hkmc.bcm.IBCMListener",
+    "static": true
+  },
+  "framework.bcm_listener_stub.heating": {
+    "field": "TRANSACTION_onRemoteTeleHeatingStatusChanged",
+    "type": "int",
+    "static": true
+  },
+  "framework.bcm_service": {
+    "class": "com.hkmc.bcm.IBCMService"
+  },
+  "framework.bcm_service.ast_seat_heat_option": {
+    "method": "getAstSeatHeatOption",
+    "params": [],
+    "ret": "int",
+    "static": false
+  },
+  "framework.bcm_service.ast_seat_heat_state": {
+    "method": "getAstSeatHeatState",
+    "params": [],
+    "ret": "int",
+    "static": false
+  },
+  "framework.bcm_service.charge_door": {
+    "method": "requestChargeLockDoor",
+    "params": [
+      "boolean"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "framework.bcm_service.drv_seat_heat_option": {
+    "method": "getDrvSeatHeatOption",
+    "params": [],
+    "ret": "int",
+    "static": false
+  },
+  "framework.bcm_service.drv_seat_heat_state": {
+    "method": "getDrvSeatHeatState",
+    "params": [],
+    "ret": "int",
+    "static": false
+  },
+  "framework.bcm_service.register_listener": {
+    "method": "registerBCMListener",
+    "params": [
+      "com.hkmc.bcm.IBCMListener",
+      "android.os.IBinder"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "framework.bcm_service.rl_seat_heat_option": {
+    "method": "getRLSeatHeatOption",
+    "params": [],
+    "ret": "int",
+    "static": false
+  },
+  "framework.bcm_service.rl_seat_heat_state": {
+    "method": "getRLSeatHeatState",
+    "params": [],
+    "ret": "int",
+    "static": false
+  },
+  "framework.bcm_service.rr_seat_heat_option": {
+    "method": "getRRSeatHeatOption",
+    "params": [],
+    "ret": "int",
+    "static": false
+  },
+  "framework.bcm_service.rr_seat_heat_state": {
+    "method": "getRRSeatHeatState",
+    "params": [],
+    "ret": "int",
+    "static": false
+  },
+  "framework.bcm_service_stub": {
+    "class": "com.hkmc.bcm.IBCMService$Stub"
+  },
+  "framework.bcm_service_stub.as_interface": {
+    "method": "asInterface",
+    "params": [
+      "android.os.IBinder"
+    ],
+    "ret": "com.hkmc.bcm.IBCMService",
+    "static": true
+  },
+  "framework.build_info": {
+    "class": "com.hkmc.BuildInfo"
+  },
+  "framework.build_info.region": {
+    "field": "REGION",
+    "type": "int",
+    "static": true
+  },
+  "framework.car_services": {
+    "class": "com.hkmc.Service"
+  },
+  "framework.car_services.bcm": {
+    "field": "BCM_SERVICE",
+    "type": "java.lang.String",
+    "static": true
+  },
+  "framework.car_services.datc": {
+    "field": "DATC_SERVICE",
+    "type": "java.lang.String",
+    "static": true
+  },
+  "framework.car_services.factory": {
+    "field": "FACTORY_SERVICE",
+    "type": "java.lang.String",
+    "static": true
+  },
+  "framework.car_services.hev": {
+    "field": "HEV_SERVICE",
+    "type": "java.lang.String",
+    "static": true
+  },
+  "framework.car_services.micom_data": {
+    "field": "MICOMDATA_SERVICE",
+    "type": "java.lang.String",
+    "static": true
+  },
+  "framework.car_services.pgs": {
+    "field": "PGS_SERVICE",
+    "type": "java.lang.String",
+    "static": true
+  },
+  "framework.car_services.regulation": {
+    "field": "REGULATION_SERVICE",
+    "type": "java.lang.String",
+    "static": true
+  },
+  "framework.car_services.system": {
+    "field": "SYSTEM_SERVICE",
+    "type": "java.lang.String",
+    "static": true
+  },
+  "framework.car_services.usm": {
+    "field": "USM_SERVICE",
+    "type": "java.lang.String",
+    "static": true
+  },
+  "framework.car_services.vr": {
+    "field": "VR_SERVICE",
+    "type": "java.lang.String",
+    "static": true
+  },
+  "framework.context_impl": {
+    "class": "android.app.ContextImpl"
+  },
+  "framework.context_impl.start_service": {
+    "method": "startService",
+    "params": [
+      "android.content.Intent"
+    ],
+    "ret": "android.content.ComponentName",
+    "static": false
+  },
+  "framework.crossroad_name": {
+    "class": "com.hkmc.cluster.NavigationCluster$CrossroadName"
+  },
+  "framework.crossroad_name.name": {
+    "field": "name",
+    "type": "java.lang.String",
+    "static": false
+  },
+  "framework.crossroad_name.new": {
+    "ctor": []
+  },
+  "framework.datc_listener": {
+    "class": "com.hkmc.datc.IDATCListener"
+  },
+  "framework.datc_listener_stub": {
+    "class": "com.hkmc.datc.IDATCListener$Stub"
+  },
+  "framework.datc_listener_stub.as_interface": {
+    "method": "asInterface",
+    "params": [
+      "android.os.IBinder"
+    ],
+    "ret": "com.hkmc.datc.IDATCListener",
+    "static": true
+  },
+  "framework.datc_listener_stub.status": {
+    "field": "TRANSACTION_onDatcStatus",
+    "type": "int",
+    "static": true
+  },
+  "framework.datc_service": {
+    "class": "com.hkmc.datc.IDATCService"
+  },
+  "framework.datc_service.register_listener": {
+    "method": "registerDATCListener",
+    "params": [
+      "com.hkmc.datc.IDATCListener",
+      "android.os.IBinder"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "framework.datc_service_stub": {
+    "class": "com.hkmc.datc.IDATCService$Stub"
+  },
+  "framework.datc_service_stub.as_interface": {
+    "method": "asInterface",
+    "params": [
+      "android.os.IBinder"
+    ],
+    "ret": "com.hkmc.datc.IDATCService",
+    "static": true
+  },
+  "framework.datc_status": {
+    "class": "com.hkmc.datc.DatcStatus"
+  },
+  "framework.datc_status.ambient_c": {
+    "method": "getAmbientTempC",
+    "params": [],
+    "ret": "float",
+    "static": false
+  },
+  "framework.datc_status.ambient_f": {
+    "method": "getAmbientTempF",
+    "params": [],
+    "ret": "float",
+    "static": false
+  },
+  "framework.datc_status.ambient_state_c": {
+    "method": "getAmbientTempStateC",
+    "params": [],
+    "ret": "int",
+    "static": false
+  },
+  "framework.datc_status.creator": {
+    "field": "CREATOR",
+    "type": "android.os.Parcelable$Creator",
+    "static": true
+  },
+  "framework.destination_name": {
+    "class": "com.hkmc.cluster.NavigationCluster$DestinationName"
+  },
+  "framework.destination_name.name": {
+    "field": "name",
+    "type": "java.lang.String",
+    "static": false
+  },
+  "framework.destination_name.new": {
+    "ctor": []
+  },
+  "framework.destination_name.type": {
+    "field": "type",
+    "type": "int",
+    "static": false
+  },
+  "framework.dipo_manager": {
+    "class": "android.dipo.DiPOManager"
+  },
+  "framework.dipo_manager.current_mode": {
+    "method": "getCurrentDiPOMode",
+    "params": [],
+    "ret": "android.dipo.DiPOMode",
+    "static": false
+  },
+  "framework.dipo_manager.current_stat": {
+    "method": "getCurrentDiPOStat",
+    "params": [],
+    "ret": "int",
+    "static": false
+  },
+  "framework.dipo_manager.is_turn_by_turn": {
+    "method": "isDiPOTurnByTurnMode",
+    "params": [],
+    "ret": "boolean",
+    "static": false
+  },
+  "framework.dipo_mode": {
+    "class": "android.dipo.DiPOMode"
+  },
+  "framework.dipo_mode.phone_call": {
+    "method": "getPhoneCall",
+    "params": [],
+    "ret": "int",
+    "static": false
+  },
+  "framework.dipo_mode.speech": {
+    "method": "getSpeech",
+    "params": [],
+    "ret": "int",
+    "static": false
+  },
+  "framework.factory_service": {
+    "class": "com.hkmc.factory.IMicomFactoryService"
+  },
+  "framework.factory_service.hide_consent_screen": {
+    "method": "hideConsentScreen",
+    "params": [],
+    "ret": "void",
+    "static": false
+  },
+  "framework.factory_service_stub": {
+    "class": "com.hkmc.factory.IMicomFactoryService$Stub"
+  },
+  "framework.factory_service_stub.as_interface": {
+    "method": "asInterface",
+    "params": [
+      "android.os.IBinder"
+    ],
+    "ret": "com.hkmc.factory.IMicomFactoryService",
+    "static": true
+  },
+  "framework.gpm_manager": {
+    "class": "com.hkmc.gpm.GpmManager"
+  },
+  "framework.gpm_manager.is_activated": {
+    "method": "isGpmActivated",
+    "params": [],
+    "ret": "boolean",
+    "static": false
+  },
+  "framework.gpm_manager.is_call": {
+    "method": "isGpmCall",
+    "params": [],
+    "ret": "boolean",
+    "static": false
+  },
+  "framework.gpm_manager.is_navi_guidance": {
+    "method": "isGpmNaviGuidance",
+    "params": [],
+    "ret": "boolean",
+    "static": false
+  },
+  "framework.gpm_manager.is_vr": {
+    "method": "isGpmVR",
+    "params": [],
+    "ret": "boolean",
+    "static": false
+  },
+  "framework.gpm_manager.new": {
+    "ctor": [
+      "android.content.Context"
+    ]
+  },
+  "framework.hev_flag": {
+    "class": "com.hkmc.hev.HEVManager$HEVFlag"
+  },
+  "framework.hev_flag.battery_conditioning": {
+    "field": "EV_BATTERYCONDITIONING",
+    "type": "int",
+    "static": true
+  },
+  "framework.hev_flag.display_soc": {
+    "field": "DISPLAY_SOC",
+    "type": "int",
+    "static": true
+  },
+  "framework.hev_flag.ev_ready": {
+    "field": "EV_RDY",
+    "type": "int",
+    "static": true
+  },
+  "framework.hev_flag.odometer": {
+    "field": "ODOMETER",
+    "type": "int",
+    "static": true
+  },
+  "framework.hev_service": {
+    "class": "com.hkmc.hev.IHEVService"
+  },
+  "framework.hev_service.batt_cond_remain_time": {
+    "method": "setBattCondRemainTime",
+    "params": [
+      "int"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "framework.hev_service.batt_cond_route_distance": {
+    "method": "setBattCondRouteDis",
+    "params": [
+      "int"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "framework.hev_service.batt_cond_station": {
+    "method": "setBattCondEvStation",
+    "params": [
+      "int",
+      "int"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "framework.hev_service.hev_status": {
+    "method": "getHEVStatus",
+    "params": [
+      "int"
+    ],
+    "ret": "int",
+    "static": false
+  },
+  "framework.hev_service_stub": {
+    "class": "com.hkmc.hev.IHEVService$Stub"
+  },
+  "framework.hev_service_stub.as_interface": {
+    "method": "asInterface",
+    "params": [
+      "android.os.IBinder"
+    ],
+    "ret": "com.hkmc.hev.IHEVService",
+    "static": true
+  },
+  "framework.hkmc_loader": {
+    "class": "com.hkmc.internal.Loader"
+  },
+  "framework.hkmc_loader.automotive_service": {
+    "method": "getAutomotiveServiceJar",
+    "params": [
+      "android.content.Context"
+    ],
+    "ret": "com.hkmc.internal.Loader",
+    "static": true
+  },
+  "framework.hkmc_loader.class_loader": {
+    "field": "mClassLoader",
+    "type": "java.lang.ClassLoader",
+    "static": false
+  },
+  "framework.hscan_adapter": {
+    "class": "com.hkmc.telematics.hscan.tm_interface.TM_HSCANAdapter"
+  },
+  "framework.hscan_adapter.service_name": {
+    "field": "TM_HSCAN_SERVICE",
+    "type": "java.lang.String",
+    "static": true
+  },
+  "framework.hscan_service": {
+    "class": "com.hkmc.telematics.hscan.tm_interface.ITM_HSCANService"
+  },
+  "framework.hscan_service.accel_pedal": {
+    "method": "getAccelPdlVal",
+    "params": [],
+    "ret": "float",
+    "static": false
+  },
+  "framework.hscan_service.battery_12v_soc": {
+    "method": "getBatSoc",
+    "params": [],
+    "ret": "int",
+    "static": false
+  },
+  "framework.hscan_service.brake_pressure": {
+    "method": "getCylPrsrVal",
+    "params": [],
+    "ret": "float",
+    "static": false
+  },
+  "framework.hscan_service.car_speed": {
+    "method": "getCarSpeed",
+    "params": [
+      "byte"
+    ],
+    "ret": "float",
+    "static": false
+  },
+  "framework.hscan_service.charging_status": {
+    "method": "getChargingStatus",
+    "params": [],
+    "ret": "int",
+    "static": false
+  },
+  "framework.hscan_service.hv_health": {
+    "method": "getXEV_Bms_GDS_SOH",
+    "params": [],
+    "ret": "int",
+    "static": false
+  },
+  "framework.hscan_service.moving": {
+    "method": "IsCarMoving",
+    "params": [],
+    "ret": "boolean",
+    "static": false
+  },
+  "framework.hscan_service.steering_angle": {
+    "method": "navi_getSasAngleVal",
+    "params": [],
+    "ret": "float",
+    "static": false
+  },
+  "framework.hscan_service_stub": {
+    "class": "com.hkmc.telematics.hscan.tm_interface.ITM_HSCANService$Stub"
+  },
+  "framework.hscan_service_stub.as_interface": {
+    "method": "asInterface",
+    "params": [
+      "android.os.IBinder"
+    ],
+    "ret": "com.hkmc.telematics.hscan.tm_interface.ITM_HSCANService",
+    "static": true
+  },
+  "framework.io_bridge": {
+    "class": "libcore.io.IoBridge"
+  },
+  "framework.io_bridge.connect": {
+    "method": "connect",
+    "params": [
+      "java.io.FileDescriptor",
+      "java.net.InetAddress",
+      "int"
+    ],
+    "ret": "boolean",
+    "static": true
+  },
+  "framework.io_bridge.connect_timeout": {
+    "method": "connect",
+    "params": [
+      "java.io.FileDescriptor",
+      "java.net.InetAddress",
+      "int",
+      "int"
+    ],
+    "ret": "boolean",
+    "static": true
+  },
+  "framework.micomdata_callback_stub": {
+    "class": "com.hkmc.micom.IMicomDataCallback$Stub"
+  },
+  "framework.micomdata_service": {
+    "class": "com.hkmc.micom.IMicomDataService"
+  },
+  "framework.micomdata_service.register": {
+    "method": "registerCallback",
+    "params": [
+      "java.lang.String",
+      "byte",
+      "com.hkmc.micom.IMicomDataCallback"
+    ],
+    "ret": "boolean",
+    "static": false
+  },
+  "framework.micomdata_service.unregister": {
+    "method": "unregisterCallback",
+    "params": [
+      "java.lang.String",
+      "byte",
+      "com.hkmc.micom.IMicomDataCallback"
+    ],
+    "ret": "boolean",
+    "static": false
+  },
+  "framework.micomdata_service_stub": {
+    "class": "com.hkmc.micom.IMicomDataService$Stub"
+  },
+  "framework.micomdata_service_stub.as_interface": {
+    "method": "asInterface",
+    "params": [
+      "android.os.IBinder"
+    ],
+    "ret": "com.hkmc.micom.IMicomDataService",
+    "static": true
+  },
+  "framework.mode_key_dispatcher": {
+    "class": "com.hkmc.micom.ModeKeyDispatcher"
+  },
+  "framework.mode_key_dispatcher.intercept_key": {
+    "method": "interceptKeyFromAndroid",
+    "params": [
+      "android.view.InputChannel",
+      "int",
+      "int",
+      "int",
+      "int",
+      "int",
+      "int",
+      "int",
+      "int"
+    ],
+    "ret": "int",
+    "static": false
+  },
+  "framework.mode_manager_service": {
+    "class": "com.hkmc.micom.ModeManagerService"
+  },
+  "framework.mode_manager_service.intercept_key_dispatching": {
+    "method": "interceptKeyBeforeDispatching",
+    "params": [
+      "android.view.InputChannel",
+      "int",
+      "int",
+      "int",
+      "int",
+      "int",
+      "int",
+      "int",
+      "int"
+    ],
+    "ret": "int",
+    "static": false
+  },
+  "framework.mode_manager_service.intercept_key_queueing": {
+    "method": "interceptKeyBeforeQueueing",
+    "params": [
+      "android.view.InputChannel",
+      "int",
+      "int",
+      "int",
+      "int",
+      "int",
+      "int",
+      "int",
+      "int"
+    ],
+    "ret": "int",
+    "static": false
+  },
+  "framework.navigation_cluster": {
+    "class": "com.hkmc.cluster.NavigationCluster"
+  },
+  "framework.navigation_cluster.new": {
+    "ctor": [
+      "android.content.Context"
+    ]
+  },
+  "framework.navigation_cluster.update_lane_info": {
+    "method": "updateLaneInfo",
+    "params": [
+      "byte[]"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "framework.navigation_cluster.update_remain_dis": {
+    "method": "updateRemainDis",
+    "params": [
+      "int",
+      "int",
+      "int",
+      "int"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "framework.navigation_cluster.update_tbt_info": {
+    "method": "updateTBTInfo",
+    "params": [
+      "int",
+      "int",
+      "float",
+      "float",
+      "int",
+      "int",
+      "int",
+      "int",
+      "int"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "framework.navigation_cluster.update_tbt_sub_info": {
+    "method": "updateTBTSubInfo",
+    "params": [
+      "float",
+      "int",
+      "int",
+      "int",
+      "int",
+      "int",
+      "int",
+      "float",
+      "int"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "framework.navigation_cluster.update_tbt_sub_info2": {
+    "method": "updateTBTSubInfo2",
+    "params": [
+      "float",
+      "int",
+      "float",
+      "int",
+      "float",
+      "int",
+      "int"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "framework.navigation_cluster.update_tbt_sub_info2_b": {
+    "method": "updateTBTSubInfo2",
+    "params": [
+      "float",
+      "int",
+      "int",
+      "float",
+      "int",
+      "int",
+      "float",
+      "int",
+      "int"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "framework.navigation_cluster.update_tbt_sub_info_2c": {
+    "method": "updateTBTSubInfo2C",
+    "params": [
+      "int",
+      "int",
+      "int",
+      "int",
+      "int",
+      "int",
+      "int",
+      "int",
+      "int"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "framework.navigation_cluster.update_tbt_sub_info_b": {
+    "method": "updateTBTSubInfo",
+    "params": [
+      "float",
+      "int",
+      "int",
+      "int",
+      "int",
+      "int",
+      "int",
+      "float",
+      "int",
+      "int"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "framework.navigation_cluster.update_tp_crossroad_name": {
+    "method": "updateTPCrossroadName",
+    "params": [
+      "com.hkmc.cluster.NavigationCluster$CrossroadName"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "framework.navigation_cluster.update_tp_destination_name": {
+    "method": "updateTPFlexibleDestinationName",
+    "params": [
+      "com.hkmc.cluster.NavigationCluster$DestinationName"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "framework.navigation_cluster.update_tp_lane_info": {
+    "method": "updateTPLaneInfo",
+    "params": [
+      "com.hkmc.cluster.NavigationCluster$LaneInformation"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "framework.navigation_cluster.update_tp_turn_list": {
+    "method": "updateTPTurnList",
+    "params": [
+      "com.hkmc.cluster.NavigationCluster$TurnList[]"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "framework.navigation_cluster.update_tp_turn_list_new": {
+    "method": "updateTPTurnListNew",
+    "params": [
+      "byte[]"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "framework.pgs_service": {
+    "class": "com.hkmc.pgs.IPgsService"
+  },
+  "framework.pgs_service.guide_lines": {
+    "method": "getRvmGuideLineState",
+    "params": [],
+    "ret": "int",
+    "static": false
+  },
+  "framework.pgs_service.request_guide_lines": {
+    "method": "requestGuideLineState",
+    "params": [
+      "int"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "framework.pgs_service_stub": {
+    "class": "com.hkmc.pgs.IPgsService$Stub"
+  },
+  "framework.pgs_service_stub.as_interface": {
+    "method": "asInterface",
+    "params": [
+      "android.os.IBinder"
+    ],
+    "ret": "com.hkmc.pgs.IPgsService",
+    "static": true
+  },
+  "framework.regulation_manager": {
+    "class": "com.hkmc.regulation.RegulationActivityManager"
+  },
+  "framework.regulation_manager.get_instance": {
+    "method": "getInstance",
+    "params": [
+      "android.content.Context"
+    ],
+    "ret": "com.hkmc.regulation.RegulationActivityManager",
+    "static": true
+  },
+  "framework.regulation_manager.show_popup": {
+    "method": "showRegulationPopup",
+    "params": [
+      "java.lang.String"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "framework.regulation_manager.status": {
+    "method": "getStatus",
+    "params": [],
+    "ret": "int",
+    "static": false
+  },
+  "framework.regulation_service": {
+    "class": "com.hkmc.regulation.IRegulationManager"
+  },
+  "framework.regulation_service.status": {
+    "method": "getStatus",
+    "params": [],
+    "ret": "int",
+    "static": false
+  },
+  "framework.regulation_service_stub": {
+    "class": "com.hkmc.regulation.IRegulationManager$Stub"
+  },
+  "framework.regulation_service_stub.as_interface": {
+    "method": "asInterface",
+    "params": [
+      "android.os.IBinder"
+    ],
+    "ret": "com.hkmc.regulation.IRegulationManager",
+    "static": true
+  },
+  "framework.resources": {
+    "class": "android.content.res.Resources"
+  },
+  "framework.resources.get_drawable": {
+    "method": "getDrawable",
+    "params": [
+      "int"
+    ],
+    "ret": "android.graphics.drawable.Drawable",
+    "static": false
+  },
+  "framework.resources.get_text": {
+    "method": "getText",
+    "params": [
+      "int"
+    ],
+    "ret": "java.lang.CharSequence",
+    "static": false
+  },
+  "framework.runtime": {
+    "class": "java.lang.Runtime"
+  },
+  "framework.runtime.load": {
+    "method": "load",
+    "params": [
+      "java.lang.String",
+      "java.lang.ClassLoader"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "framework.runtime.load_library": {
+    "method": "loadLibrary",
+    "params": [
+      "java.lang.String",
+      "java.lang.ClassLoader"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "framework.service_manager": {
+    "class": "android.os.ServiceManager"
+  },
+  "framework.service_manager.get_service": {
+    "method": "getService",
+    "params": [
+      "java.lang.String"
+    ],
+    "ret": "android.os.IBinder",
+    "static": true
+  },
+  "framework.system_properties": {
+    "class": "android.os.SystemProperties"
+  },
+  "framework.system_properties.get_int": {
+    "method": "getInt",
+    "params": [
+      "java.lang.String",
+      "int"
+    ],
+    "ret": "int",
+    "static": true
+  },
+  "framework.system_service": {
+    "class": "com.hkmc.micom.ISystemService"
+  },
+  "framework.system_service.gear_p_status": {
+    "method": "getGearPStatus",
+    "params": [],
+    "ret": "int",
+    "static": false
+  },
+  "framework.system_service.parking_brake_status": {
+    "method": "getEPBStatus",
+    "params": [],
+    "ret": "int",
+    "static": false
+  },
+  "framework.system_service.sml_configuration": {
+    "method": "setSMLConfiguration",
+    "params": [
+      "int",
+      "int"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "framework.system_service.sml_rgb": {
+    "method": "setSMLRGB",
+    "params": [
+      "byte[]",
+      "byte[]",
+      "byte[]"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "framework.system_service.sml_status": {
+    "method": "requestSMLStatus",
+    "params": [],
+    "ret": "void",
+    "static": false
+  },
+  "framework.system_service_stub": {
+    "class": "com.hkmc.micom.ISystemService$Stub"
+  },
+  "framework.system_service_stub.as_interface": {
+    "method": "asInterface",
+    "params": [
+      "android.os.IBinder"
+    ],
+    "ret": "com.hkmc.micom.ISystemService",
+    "static": true
+  },
+  "framework.turn_list": {
+    "class": "com.hkmc.cluster.NavigationCluster$TurnList"
+  },
+  "framework.turn_list.direction": {
+    "field": "direction",
+    "type": "int",
+    "static": false
+  },
+  "framework.turn_list.distance": {
+    "field": "distance",
+    "type": "float",
+    "static": false
+  },
+  "framework.turn_list.exit_number": {
+    "field": "exitNumber",
+    "type": "java.lang.String",
+    "static": false
+  },
+  "framework.turn_list.name": {
+    "field": "name",
+    "type": "java.lang.String",
+    "static": false
+  },
+  "framework.turn_list.new": {
+    "ctor": []
+  },
+  "framework.turn_list.no": {
+    "field": "no",
+    "type": "int",
+    "static": false
+  },
+  "framework.turn_list.traffic": {
+    "field": "traffic",
+    "type": "int",
+    "static": false
+  },
+  "framework.turn_list.type": {
+    "field": "type",
+    "type": "int",
+    "static": false
+  },
+  "framework.turn_list.unit": {
+    "field": "unit",
+    "type": "int",
+    "static": false
+  },
+  "framework.usm_manager": {
+    "class": "com.hkmc.usm.USMManager"
+  },
+  "framework.usm_manager.distance_speed_unit": {
+    "method": "getDistanceSpeedUnit",
+    "params": [],
+    "ret": "int",
+    "static": false
+  },
+  "framework.usm_manager.new": {
+    "ctor": [
+      "android.content.Context"
+    ]
+  },
+  "framework.usm_service": {
+    "class": "com.hkmc.usm.IUSMService"
+  },
+  "framework.usm_service.seat_heat_driver": {
+    "method": "setFrontSeatHeatDrvStep",
+    "params": [
+      "int"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "framework.usm_service.seat_heat_driver_option": {
+    "method": "getFrontSeatHeat_DrvOption",
+    "params": [],
+    "ret": "int",
+    "static": false
+  },
+  "framework.usm_service.seat_heat_driver_state": {
+    "method": "getFrontSeatHeat_DrvState",
+    "params": [],
+    "ret": "int",
+    "static": false
+  },
+  "framework.usm_service.seat_heat_passenger": {
+    "method": "setFrontSeatHeatAstStep",
+    "params": [
+      "int"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "framework.usm_service.seat_heat_passenger_option": {
+    "method": "getFrontSeatHeat_AstOption",
+    "params": [],
+    "ret": "int",
+    "static": false
+  },
+  "framework.usm_service.seat_heat_passenger_state": {
+    "method": "getFrontSeatHeat_AstState",
+    "params": [],
+    "ret": "int",
+    "static": false
+  },
+  "framework.usm_service.seat_heat_rear_left": {
+    "method": "setRearSeatHeatLeftStep",
+    "params": [
+      "int"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "framework.usm_service.seat_heat_rear_right": {
+    "method": "setRearSeatHeatRightStep",
+    "params": [
+      "int"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "framework.usm_service_stub": {
+    "class": "com.hkmc.usm.IUSMService$Stub"
+  },
+  "framework.usm_service_stub.as_interface": {
+    "method": "asInterface",
+    "params": [
+      "android.os.IBinder"
+    ],
+    "ret": "com.hkmc.usm.IUSMService",
+    "static": true
+  },
+  "framework.vr_service": {
+    "class": "com.hkmc.vr.IVRService"
+  },
+  "framework.vr_service.wheel_heat": {
+    "method": "set_StrgWhlHeated_Cmd_AVN",
+    "params": [
+      "int"
+    ],
+    "ret": "void",
+    "static": false
+  },
+  "framework.vr_service_stub": {
+    "class": "com.hkmc.vr.IVRService$Stub"
+  },
+  "framework.vr_service_stub.as_interface": {
+    "method": "asInterface",
+    "params": [
+      "android.os.IBinder"
+    ],
+    "ret": "com.hkmc.vr.IVRService",
+    "static": true
+  },
+  "framework.window_manager_service": {
+    "class": "com.android.server.wm.WindowManagerService"
+  },
+  "framework.window_manager_service.intercept_key": {
+    "method": "interceptKey",
+    "params": [
+      "android.view.KeyEvent"
+    ],
+    "ret": "int",
+    "static": false
+  }
+}
